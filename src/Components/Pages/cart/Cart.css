@@ -1,0 +1,61 @@
+/* Cart Page Styles */
+
+.cart-wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+
+.cart-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.cart-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-wrapper li {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.cart-wrapper img {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.cart-wrapper h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.cart-wrapper p {
+  margin: 0 0 8px 0;
+  color: #e67e22;
+  font-weight: 600;
+}
+
+.cart-wrapper button {
+  padding: 8px 20px;
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.cart-wrapper button:hover {
+  background: #f6b93b;
+}

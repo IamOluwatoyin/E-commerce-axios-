@@ -6,16 +6,19 @@ import { RiMenuUnfold3Fill, RiMenuUnfold4Fill }
 from "react-icons/ri";
 import Home from '../Pages/Home';
 import { useNavigate } from 'react-router-dom';
+import { useAppContext } from '../CartContext';
 
 
 
 
 const Header = () => {
+    const { cart } = useAppContext();
+  
 
   const navigate = useNavigate()
 
   const handleHome = ()=>{
-    useNavigate(<Home/>)
+    navigate("/home")
   }
 
 
@@ -38,14 +41,14 @@ const Header = () => {
 
         <div className='profile-with-icon'>
 
-            <div className='icon-with-count'>
+            <div className='icon-with-count' onClick={()=> navigate('/cart')}>
               <FaShoppingCart style={{color:"#f1f1f1"}}/>
-              <div className='icon-count'>0</div>
+              <div className='icon-count' >{cart.length}</div>
            </div>
 
             <div className='icon-with-count'>
               <FaHeart className='icon' />
-              <div className='icon-count'>0</div>
+              {/* <div className='icon-count'>{cart.length}</div> */}
            </div>
         
            <FaSearch className='icon' />
