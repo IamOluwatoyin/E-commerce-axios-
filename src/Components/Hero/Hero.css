@@ -1,0 +1,74 @@
+.Hero-body{
+  width: 100%;
+  height: 80vh;
+  /* background: ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero-wrapper{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Hero-left{
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+}
+.Hero-left > p {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+.Hero-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Button{
+  width: 40px;
+  height: 40px;
+  background: #f2deaccc;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Product-Display{
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+
+.Product-Display img{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 40px;
+  top: 100px;
+  /* border-radius: 50%; */
+  /* rotate: -12deg; */
+  
+  
+}
+.click-icon{
+  font-size: 25px;
+   width: 30px;
+  height: 30px;
+  
+}

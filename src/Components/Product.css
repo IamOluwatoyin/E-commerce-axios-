@@ -1,0 +1,17 @@
+.product-wrapper{
+  width: 100%;
+  height: auto;
+  background-color:;
+  padding: 20px;
+  
+}
+.card-wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+

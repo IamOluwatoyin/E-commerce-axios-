@@ -1,0 +1,169 @@
+.Header-Body{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+.Header-wrapper{
+  width: 80%;
+  height: 100%;
+  background-color: #2b2a29;
+  clip-path: polygon(0px 0px, 100% 0px, 98% 100%, 2% 100%);
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  position: relative;
+}
+
+.Header-wrapper > h3{
+  font-size: 30px;
+  font-weight: 700;
+  color: #f1f1f1;
+  padding-left: 25px;
+}
+
+.Header-wrapper > h3 > span{
+  color: blueviolet;
+}
+
+.right-header-side{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: beige; */
+  justify-content: space-between;
+  position: relative;
+
+}
+.MobileNav{
+  position: absolute;
+  top: 100%;
+  width: 50%;
+  height: 70vh;
+  background: #000000ad;
+  backdrop-filter: blur(20px);
+}
+
+nav{
+  width: 35%;
+  
+}
+nav > ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: yellow; */
+
+}
+
+nav > ul > li{
+  list-style: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  width: 35%;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 245ms ease-in-out;
+  transform: scale(1);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* background-color: blue; */
+  
+}
+
+nav > ul > li:hover{
+  background: rgba(199, 199, 199, 0.616);
+  transform: scale(0.8);
+}
+
+.profile-with-icon{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+}
+
+.icon-with-count{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.icon-count{
+  background: red;
+  font-size: 17px;
+  border-radius: 50%;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute ;
+  left: 20px;
+  bottom: 10px;
+}
+
+.icon{
+font-size: 23px;
+color: #f1f1f1;
+}
+ 
+.icon-menu-icon{
+  display: none;
+}
+
+.drop-show-body{
+  width: 100%;
+  height: 30vh;
+  /* background-color: red; */
+  position: absolute;
+  top: 100%;
+  border-radius: 5px;
+}
+
+.search-body-show{
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 100%;
+  border-radius: 5px;
+  background-color: brown;
+}
+.profile{
+  position: relative;
+}
+
+.show-profile-drop{
+  position: absolute;
+  top: 100%;
+  background-color: lightgrey;
+  right: 65px;
+  width: 30%;
+  height: 15vh;
+}
+
+@media screen and (max-width: 900px) {
+  .Header-wrapper{
+    width: 100%;
+  }
+  nav{
+    display: none;
+  }
+  .right-header-side{
+    width: 50%;
+  }
+  .profile-with-icon{
+    width: 100%;
+  }
+  .icon-menu-icon{
+    display: block;
+  }
+}
